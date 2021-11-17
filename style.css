@@ -74,7 +74,7 @@ body {
 }
 .navbar-section nav ul {
   display: flex;
-  gap: 75px;
+  gap: 27px;
   align-items: last baseline;
   height: 100%;
 }
@@ -88,6 +88,23 @@ body {
   padding-bottom: 0.75rem;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.navbar-section nav ul li:not(:last-child) {
+  height: 100%;
+}
+.navbar-section nav ul li {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: last baseline;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar-section nav ul li:not(:last-child):hover {
+  background: #93A5FF;
 }
 .navbar-section nav ul li a {
   text-decoration: none;
@@ -108,35 +125,114 @@ body {
 
 header {
   width: 100vw;
-  min-height: 850px;
+  max-height: 850px;
   position: relative;
   overflow: hidden;
+  height: 78vh;
 }
 header section {
-  height: 800px;
+  height: 100%;
   width: 90%;
   max-width: 1650px;
   margin: 0 auto;
 }
+header section .content {
+  height: calc(100% - 90px);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+header section .content > img {
+  width: 50%;
+  margin-bottom: 7%;
+}
+header section .content > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 7%;
+}
+header section .content > div h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  letter-spacing: 0.735px;
+  line-height: 64px;
+}
+header section .content > div p {
+  font-size: 28px;
+  letter-spacing: 0.42px;
+  opacity: 0.8;
+  line-height: 38px;
+}
+header section .content > div .choice {
+  display: flex;
+  gap: 1px;
+}
+header section .content > div .choice > input {
+  color: white;
+  background: #384170;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 14px 17px;
+  width: 40%;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  margin-top: 2.75rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+header section .content > div .choice > select {
+  width: 15%;
+  margin-top: 2.75rem;
+  background: #384170;
+  border: none;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  padding-left: 0.75rem;
+}
+header section .content > div .choice > a {
+  margin-top: 2.75rem;
+  background: #93A5FF;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
 header section .rotateLight {
   position: absolute;
-  top: -87px;
+  top: -71px;
   left: -41px;
   z-index: -2;
   width: 106%;
   height: 100%;
   background: #8C9EFC;
-  transform: rotate(-5deg);
+  transform: rotate(-4deg);
 }
 header section .rotateDark {
   position: absolute;
-  top: -85px;
-  left: -25px;
+  top: -98px;
+  left: -36px;
   z-index: -1;
   width: 105%;
   height: 100%;
   background: #424D83;
-  transform: rotate(5deg);
+  transform: rotate(4deg);
+  box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
 }
 
 /*# sourceMappingURL=style.css.map */
