@@ -52,9 +52,14 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar-section {
@@ -63,11 +68,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   height: 90px;
 }
 .navbar-section > img {
   height: 27px;
+  padding-bottom: 0.5rem;
 }
 .navbar-section nav {
   height: 100%;
@@ -75,19 +81,8 @@ body {
 .navbar-section nav ul {
   display: flex;
   gap: 27px;
-  align-items: last baseline;
+  align-items: flex-end;
   height: 100%;
-}
-.navbar-section nav ul .hover {
-  background: #93A5FF;
-  height: 100%;
-  display: flex;
-  align-items: last baseline;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 .navbar-section nav ul li:not(:last-child) {
   height: 100%;
@@ -97,7 +92,7 @@ body {
   padding-right: 1.5rem;
   padding-bottom: 0.75rem;
   display: flex;
-  align-items: last baseline;
+  align-items: flex-end;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   cursor: pointer;
@@ -128,10 +123,10 @@ header {
   max-height: 850px;
   position: relative;
   overflow: hidden;
-  height: 78vh;
+  height: 90vh;
 }
 header section {
-  height: 100%;
+  width: 90%;
   width: 90%;
   max-width: 1650px;
   margin: 0 auto;
@@ -141,6 +136,7 @@ header section .content {
   display: flex;
   align-items: center;
   color: #fff;
+  margin-top: 4.8rem;
 }
 header section .content > img {
   width: 50%;
@@ -155,15 +151,15 @@ header section .content > div {
 header section .content > div h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 49px;
+  font-size: 3rem;
   letter-spacing: 0.735px;
-  line-height: 64px;
+  line-height: 4rem;
 }
 header section .content > div p {
-  font-size: 28px;
+  font-size: 1.75rem;
   letter-spacing: 0.42px;
   opacity: 0.8;
-  line-height: 38px;
+  line-height: 2.375rem;
 }
 header section .content > div .choice {
   display: flex;
@@ -174,9 +170,9 @@ header section .content > div .choice > input {
   background: #384170;
   outline: none;
   border: none;
-  font-size: 20px;
-  line-height: 27px;
-  padding: 14px 17px;
+  font-size: 1.25rem;
+  line-height: 1.68rem;
+  padding: 0.875rem 1rem;
   width: 40%;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
@@ -192,7 +188,7 @@ header section .content > div .choice > select {
   outline: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
@@ -233,6 +229,95 @@ header section .rotateDark {
   background: #424D83;
   transform: rotate(4deg);
   box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+}
+
+main {
+  width: 100vw;
+}
+main section {
+  width: 90%;
+  max-width: 1650px;
+  margin: 0 auto;
+}
+main section .WhatWill {
+  width: 100%;
+  color: #2E2E2E;
+  margin-top: 5rem;
+}
+main section .WhatWill > h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 3rem;
+  letter-spacing: 0.525px;
+}
+main section .WhatWill > p {
+  opacity: 0.8;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.37rem;
+  text-align: center;
+  letter-spacing: 0.42px;
+}
+main section .WhatWill .illu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 6.6rem;
+}
+main section .WhatWill .illu__text {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  max-width: 690px;
+}
+main section .WhatWill .illu__text__card {
+  display: flex;
+  align-items: flex-start;
+  height: 33%;
+  margin-bottom: 3.75rem;
+}
+main section .WhatWill .illu__text__card img {
+  height: 57%;
+  max-height: 71px;
+}
+main section .WhatWill .illu__text__card__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.9rem;
+}
+main section .WhatWill .illu__text__card__text h3, main section .WhatWill .illu__text__card__text p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 37px;
+}
+main section .WhatWill .illu__text__card__text p {
+  font-weight: 400;
+  opacity: 0.8;
+}
+main section .WhatWill .illu__text__card__text h3 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.345px;
+}
+main section .WhatWill .illu__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 850px;
+  max-height: 570px;
+  width: 52%;
+}
+main section .WhatWill .illu__img img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main section .WhatWill .illu__img img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

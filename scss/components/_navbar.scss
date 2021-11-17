@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     height: 90px;
     
 
     > img {
         height: 27px;
+        padding-bottom: 0.5rem;
     }
 
     nav {
@@ -20,21 +21,10 @@
         ul {
             display: flex;
             gap: 27px;
-            align-items: last baseline;
+            align-items: flex-end;
             height: 100%;
 
-            .hover {
-                background: $color-button-light-text;
-                height: 100%;
-                display: flex;
-                align-items: last baseline;
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-                padding-bottom: 0.75rem;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-
-            }
+            
 
             li:not(:last-child) {
                 height: 100%;
@@ -46,7 +36,7 @@
                 padding-bottom: 0.75rem;
                 //height: 100%;
                 display: flex;
-                align-items: last baseline;
+                align-items: flex-end;
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
                 cursor: pointer;
