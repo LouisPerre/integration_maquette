@@ -1,0 +1,62 @@
+.navbar-section {
+    font-size: 20px;
+    color: $color-light-text;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 90px;
+    
+
+    > img {
+        height: 27px;
+    }
+
+    nav {
+        height: 100%;
+        //display: flex;
+        //align-items: center;
+
+        ul {
+            display: flex;
+            gap: 75px;
+            align-items: last baseline;
+            height: 100%;
+
+            .hover {
+                background: $color-button-light-text;
+                height: 100%;
+                display: flex;
+                align-items: last baseline;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 0.75rem;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+            }
+            
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: $color-light-text;
+                }
+            }
+
+            .Login {
+                padding: 0.75rem;
+                background: $color-light-text;
+                border-radius: 5px;
+                img {
+                    margin-left: 1.5rem;
+                }
+
+                a {
+                    font-weight: 600;
+                    color: $color-button-light-text;
+                }
+            }
+        }
+    }
+}
