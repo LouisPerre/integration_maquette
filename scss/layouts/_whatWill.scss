@@ -1,28 +1,35 @@
 main {
     width: 100vw;
+    .bg {
+        width: 100vw;
+        background-color: #F7F8FF;
+        padding-bottom: 6.931rem;
+    }
+
     section {
         @include placeSection;
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-align: center;
+            line-height: 3rem;
+            letter-spacing: 0.525px;
+        }
+
+        p {
+            opacity: 0.8;
+            font-size: 1.75rem;
+            font-weight: 400;
+            line-height: 2.37rem;
+            text-align: center;
+            letter-spacing: 0.42px;
+        }
 
         .WhatWill {
             width: 100%;
             color: $color-dark-text;
             margin-top: 5rem;
-            > h2 {
-                font-size: 2.2rem;
-                font-weight: 800;
-                text-align: center;
-                line-height: 3rem;
-                letter-spacing: 0.525px;
-            }
-
-            > p {
-                opacity: 0.8;
-                font-size: 1.75rem;
-                font-weight: 400;
-                line-height: 2.37rem;
-                text-align: center;
-                letter-spacing: 0.42px;
-            }
 
             .illu {
                 display: flex;
@@ -102,6 +109,106 @@ main {
                         left: 0;
                     }
 
+                }
+            }
+        }
+
+        .DontKnow {
+            width: 100%;
+            color: $color-dark-text;
+            padding-top: 5rem;
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 4.981rem;
+
+                .light {
+                    background: $color-button-light-text;
+                }
+
+                .dark {
+                    background: $color-primary;
+                }
+
+                .planning {
+                    width: 47%;
+                    max-width: 765px;
+                    border-radius: 5px;
+                    position: relative;
+                    color: $color-light-text;
+                    //padding-left: 3.125rem;
+                    //padding-right: 3.125rem;
+                    //padding-top: 2.875rem;
+                    padding: 2.875rem 3.125rem;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+
+                    .contentImg {
+                        width: 10%;
+                        max-width: 77px;
+                        margin-bottom: 2.6875rem;
+                    }
+
+                    .bgImageLight {
+                        width: 35%;
+                        max-width: 265px;
+                        position: absolute;
+                        right: 1.2rem;
+                        top: 2.2rem;
+                    }
+
+                    .bgImageDark {
+                        width: 35%;
+                        max-width: 260px;
+                        position: absolute;
+                        right: 1.2rem;
+                        top: 0;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        line-height: 37px;
+                        letter-spacing: 0.345px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                        line-height: 37px;
+                        width: 85.7%;
+                        max-width: 656px;
+                        text-align: left;
+                        opacity: 1;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .btn {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        a {
+                            background: $color-light-text;
+                            text-decoration: none;
+                            color: $color-button-light-text;
+                            padding: 0.53rem 1.293rem;
+                            border-radius: 5px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 37px;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                margin-left: 1.156rem;
+                            }
+                        }
+
+                        
+                    }
                 }
             }
         }

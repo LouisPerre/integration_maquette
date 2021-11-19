@@ -52,12 +52,15 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
 }
@@ -234,30 +237,35 @@ header section .rotateDark {
 main {
   width: 100vw;
 }
+main .bg {
+  width: 100vw;
+  background-color: #F7F8FF;
+  padding-bottom: 6.931rem;
+}
 main section {
   width: 90%;
   max-width: 1650px;
   margin: 0 auto;
 }
-main section .WhatWill {
-  width: 100%;
-  color: #2E2E2E;
-  margin-top: 5rem;
-}
-main section .WhatWill > h2 {
+main section h2 {
   font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
   line-height: 3rem;
   letter-spacing: 0.525px;
 }
-main section .WhatWill > p {
+main section p {
   opacity: 0.8;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 2.37rem;
   text-align: center;
   letter-spacing: 0.42px;
+}
+main section .WhatWill {
+  width: 100%;
+  color: #2E2E2E;
+  margin-top: 5rem;
 }
 main section .WhatWill .illu {
   display: flex;
@@ -318,6 +326,88 @@ main section .WhatWill .illu__img img:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+main section .DontKnow {
+  width: 100%;
+  color: #2E2E2E;
+  padding-top: 5rem;
+}
+main section .DontKnow .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.981rem;
+}
+main section .DontKnow .content .light {
+  background: #93A5FF;
+}
+main section .DontKnow .content .dark {
+  background: #424D83;
+}
+main section .DontKnow .content .planning {
+  width: 47%;
+  max-width: 765px;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  padding: 2.875rem 3.125rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main section .DontKnow .content .planning .contentImg {
+  width: 10%;
+  max-width: 77px;
+  margin-bottom: 2.6875rem;
+}
+main section .DontKnow .content .planning .bgImageLight {
+  width: 35%;
+  max-width: 265px;
+  position: absolute;
+  right: 1.2rem;
+  top: 2.2rem;
+}
+main section .DontKnow .content .planning .bgImageDark {
+  width: 35%;
+  max-width: 260px;
+  position: absolute;
+  right: 1.2rem;
+  top: 0;
+}
+main section .DontKnow .content .planning h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0.345px;
+  margin-bottom: 1.5rem;
+}
+main section .DontKnow .content .planning p {
+  font-size: 1.25rem;
+  line-height: 37px;
+  width: 85.7%;
+  max-width: 656px;
+  text-align: left;
+  opacity: 1;
+  margin-bottom: 1.25rem;
+}
+main section .DontKnow .content .planning .btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+main section .DontKnow .content .planning .btn a {
+  background: #fff;
+  text-decoration: none;
+  color: #93A5FF;
+  padding: 0.53rem 1.293rem;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+}
+main section .DontKnow .content .planning .btn a img {
+  margin-left: 1.156rem;
 }
 
 /*# sourceMappingURL=style.css.map */
