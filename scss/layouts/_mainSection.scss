@@ -75,6 +75,7 @@ main {
                             p {
                                 font-weight: 400;
                                 opacity: 0.8;
+                                text-align: left;
                             }
                             h3 {
                                 font-weight: 700;
@@ -211,6 +212,153 @@ main {
                     }
                 }
             }
+        }
+
+        .typesHosting {
+            width: 100%;
+            color: $color-dark-text;
+            padding-top: 5rem;
+
+            .service {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5rem;
+                margin-bottom: 6.6rem;
+                
+
+                .vpn {
+                    border-top: $color-button-light-text 11px solid;
+
+                    
+                    a {
+                        margin-bottom: 3.75rem;
+                        padding: 0.53rem 1.293rem;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 37px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $color-button-light-text;
+                        background: #F7F8FF;
+                        width: 62.6%;
+                        max-width: 224.16px;
+
+                            img {
+                                margin-left: 1.156rem;
+                            }
+                    }
+                }
+
+                .shared {
+                    border-radius: 5px;
+                    width: 21.7%;
+                    box-shadow: 0 3px 17px rgba(0, 0, 0, 0.11);
+                    height: 100%;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        .hoverPrice {
+                        margin-bottom: 3.75rem;
+                        padding: 0.53rem 1.293rem;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 37px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $color-button-light-text;
+                        background: #F7F8FF;
+                        width: 62.6%;
+                        max-width: 224.16px;
+
+                            img {
+                                margin-left: 1.156rem;
+                            }
+                        }
+
+                        border-top: $color-button-light-text 11px solid;
+                    }
+
+                    &__content {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 2.3125rem 0;
+                        text-align: center;
+        
+                        h3 {
+                            font-size: 1.437rem;
+                            font-weight: 700;
+                            letter-spacing: 0.345px;
+                            line-height: 2.31rem;
+                            margin-top: 2.25rem;
+                            margin-bottom: 2.25rem;
+                            
+                        }
+        
+                        p {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            line-height: 2.31rem;
+                            margin-bottom: 2.90rem;
+                            width: 79.3%;
+                            max-width: 284px;
+                            letter-spacing: 0;
+                        }
+    
+                        img {
+                            width: 18.65rem;
+                            max-width: 66.78px;
+                            margin-top: 2.8121rem;
+                        }  
+                    }
+
+                    &__price {
+                        width: 100%;
+                        border-top: solid 1px #EBEBEB;
+                        padding-top: 2.90rem;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .titlePrice {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            line-height: 2.31rem;
+                            opacity: 1;
+                            //margin-top: 2.28rem;
+                        }
+
+                        .priceNumber {
+                            font-size: 2.5rem;
+                            font-weight: 400;
+                            line-height: 2.31rem;
+                            opacity: 1;
+                            margin-bottom: 2.93rem;
+                            
+                            span {
+                                font-size: 1.125rem;
+                                font-weight: 400;
+                                line-height: 2.31rem;
+                            }
+                        }
+
+                        .hoverPrice {
+                            display: none;
+                            transition: all 0.3s;
+                        }
+
+                        
+                    }
+                }  
+
+            }
+            
         }
 
     }

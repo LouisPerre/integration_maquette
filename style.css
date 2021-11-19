@@ -302,6 +302,7 @@ main section .WhatWill .illu__text__card__text h3, main section .WhatWill .illu_
 main section .WhatWill .illu__text__card__text p {
   font-weight: 400;
   opacity: 0.8;
+  text-align: left;
 }
 main section .WhatWill .illu__text__card__text h3 {
   font-weight: 700;
@@ -408,6 +409,126 @@ main section .DontKnow .content .planning .btn a {
 }
 main section .DontKnow .content .planning .btn a img {
   margin-left: 1.156rem;
+}
+main section .typesHosting {
+  width: 100%;
+  color: #2E2E2E;
+  padding-top: 5rem;
+}
+main section .typesHosting .service {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 6.6rem;
+}
+main section .typesHosting .service .vpn {
+  border-top: #93A5FF 11px solid;
+}
+main section .typesHosting .service .vpn a {
+  margin-bottom: 3.75rem;
+  padding: 0.53rem 1.293rem;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #93A5FF;
+  background: #F7F8FF;
+  width: 62.6%;
+  max-width: 224.16px;
+}
+main section .typesHosting .service .vpn a img {
+  margin-left: 1.156rem;
+}
+main section .typesHosting .service .shared {
+  border-radius: 5px;
+  width: 21.7%;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.11);
+  height: 100%;
+  transition: all 0.3s;
+}
+main section .typesHosting .service .shared:hover {
+  border-top: #93A5FF 11px solid;
+}
+main section .typesHosting .service .shared:hover .hoverPrice {
+  margin-bottom: 3.75rem;
+  padding: 0.53rem 1.293rem;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #93A5FF;
+  background: #F7F8FF;
+  width: 62.6%;
+  max-width: 224.16px;
+}
+main section .typesHosting .service .shared:hover .hoverPrice img {
+  margin-left: 1.156rem;
+}
+main section .typesHosting .service .shared__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.3125rem 0;
+  text-align: center;
+}
+main section .typesHosting .service .shared__content h3 {
+  font-size: 1.437rem;
+  font-weight: 700;
+  letter-spacing: 0.345px;
+  line-height: 2.31rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+main section .typesHosting .service .shared__content p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.31rem;
+  margin-bottom: 2.9rem;
+  width: 79.3%;
+  max-width: 284px;
+  letter-spacing: 0;
+}
+main section .typesHosting .service .shared__content img {
+  width: 18.65rem;
+  max-width: 66.78px;
+  margin-top: 2.8121rem;
+}
+main section .typesHosting .service .shared__price {
+  width: 100%;
+  border-top: solid 1px #EBEBEB;
+  padding-top: 2.9rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main section .typesHosting .service .shared__price .titlePrice {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.31rem;
+  opacity: 1;
+}
+main section .typesHosting .service .shared__price .priceNumber {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.31rem;
+  opacity: 1;
+  margin-bottom: 2.93rem;
+}
+main section .typesHosting .service .shared__price .priceNumber span {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.31rem;
+}
+main section .typesHosting .service .shared__price .hoverPrice {
+  display: none;
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
