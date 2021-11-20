@@ -204,7 +204,7 @@ header section .content > div .choice > a {
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
-  font-size: 18;
+  font-size: 18px;
   font-weight: 600;
   padding: 1rem 1.2rem;
   display: flex;
@@ -529,6 +529,46 @@ main section .typesHosting .service .shared__price .priceNumber span {
 main section .typesHosting .service .shared__price .hoverPrice {
   display: none;
   transition: all 0.3s;
+}
+main section .client {
+  color: #2E2E2E;
+}
+main section .client h2 {
+  margin-top: 5.875rem;
+  line-height: 2.9375rem;
+}
+main section .client p {
+  opacity: 1;
+}
+main section .client .logoSos {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9.25rem;
+  max-width: 1650px;
+}
+main section .client .logoSos img {
+  height: 100%;
+}
+main section .client .button {
+  display: flex;
+  justify-content: center;
+}
+main section .client .button a {
+  margin-top: 4.4rem;
+  background: #93A5FF;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.9375rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7.2875rem;
 }
 main .dottedPoint {
   width: 100vw;
