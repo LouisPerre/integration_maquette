@@ -530,5 +530,100 @@ main section .typesHosting .service .shared__price .hoverPrice {
   display: none;
   transition: all 0.3s;
 }
+main .dottedPoint {
+  width: 100vw;
+  position: relative;
+}
+main .dottedPoint .first {
+  position: absolute;
+  right: 0.79rem;
+  top: -3rem;
+}
+main .dottedPoint .second {
+  position: absolute;
+  left: 0.745rem;
+  bottom: -3.875rem;
+}
+main .dottedPoint .bg-review {
+  background-color: #F7F8FF;
+  padding-bottom: 6.931rem;
+}
+main .dottedPoint .bg-review .pages {
+  gap: 1.41rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.1875rem;
+}
+main .dottedPoint .bg-review .pages .dot {
+  width: 12.33px;
+  height: 12.33px;
+  border-radius: 9999px;
+  background: #93A5FF;
+  opacity: 0.38;
+  transition: all 0.3s;
+}
+main .dottedPoint .bg-review .pages .dot:hover {
+  width: 20.8px;
+  height: 20.8px;
+  opacity: 1;
+  box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+}
+main .dottedPoint .bg-review .pages .hoverAct {
+  width: 20.8px;
+  height: 20.8px;
+  opacity: 1;
+  box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+}
+main .dottedPoint .bg-review .content {
+  justify-content: space-evenly;
+}
+main .dottedPoint .bg-review .content .feedback {
+  width: 41.5%;
+  max-width: 685px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 100%;
+}
+main .dottedPoint .bg-review .content .feedback .user {
+  width: 15.7%;
+  max-width: 108px;
+  margin-right: 1.93rem;
+}
+main .dottedPoint .bg-review .content .feedback .user img {
+  width: 100%;
+}
+main .dottedPoint .bg-review .content .feedback .card__content {
+  width: 79.7%;
+  max-width: 546px;
+  margin-top: 0.82125rem;
+}
+main .dottedPoint .bg-review .content .feedback .card__content .reviewStar {
+  width: 24.81%;
+  max-width: 136px;
+  margin-bottom: 1.525rem;
+}
+main .dottedPoint .bg-review .content .feedback .card__content p {
+  font-size: 1.4375rem;
+  letter-spacing: 0.345px;
+  line-height: 2.31rem;
+  font-style: italic;
+  text-align: left;
+  color: #2E2E2E;
+  margin-bottom: 0.75rem;
+  opacity: 1;
+  font-weight: 300;
+}
+main .dottedPoint .bg-review .content .feedback .card__content h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+  color: #2E2E2E;
+  font-weight: 700;
+  line-height: 2.31rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -360,6 +360,123 @@ main {
             }
             
         }
+    }
 
+    .dottedPoint {
+        width: 100vw;
+        position: relative;
+
+        .first {
+            position: absolute;
+            right: 0.79rem;
+            top: -3rem;
+        }
+
+        .second {
+            position: absolute;
+            left: 0.745rem;
+            bottom: -3.875rem;
+        }
+
+        .bg-review {
+        
+            background-color: #F7F8FF;
+            padding-bottom: 6.931rem;
+
+            .pages {
+                gap: 1.41rem;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 4.1875rem;
+                .dot {
+                    width: 12.33px;
+                    height: 12.33px;
+                    border-radius: 9999px;
+                    background: $color-button-light-text;
+                    opacity: 0.38;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        width: 20.8px;
+                        height: 20.8px;
+                        opacity: 1;
+                        box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+                    }
+                }
+
+                .hoverAct {
+                    width: 20.8px;
+                    height: 20.8px;
+                    opacity: 1;
+                    box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+                }
+            }
+
+            .content {
+                justify-content: space-evenly;
+
+                .feedback {
+                    width: 41.5%;
+                    max-width: 685px;
+                    position: relative;
+                    color: $color-light-text;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    height: 100%;
+    
+                    .user {
+                        width: 15.7%;
+                        max-width: 108px;
+                        margin-right: 1.93rem;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+    
+                    .card__content {
+                        width: 79.7%;
+                        max-width: 546px;
+                        //height: 93.59%;
+                        margin-top: 0.82125rem;
+    
+                        .reviewStar {
+                            width: 24.81%;
+                            max-width: 136px;
+                            margin-bottom: 1.525rem;
+                        }
+    
+                        p {
+                            font-size: 1.4375rem;
+                            letter-spacing: 0.345px;
+                            line-height: 2.31rem;
+                            font-style: italic;
+                            text-align: left;
+                            color: $color-dark-text;
+                            margin-bottom: 0.75rem;
+                            opacity: 1;
+                            font-weight: 300;
+                        }
+    
+                        h3 {
+                            font-size: 1.25rem;
+                            letter-spacing: 0.3px;
+                            color: $color-dark-text;
+                            font-weight: 700;
+                            line-height: 2.31rem;
+                        }
+                    }
+    
+                    
+    
+                    
+                }
+            }
+
+            
+        }
     }
 }
