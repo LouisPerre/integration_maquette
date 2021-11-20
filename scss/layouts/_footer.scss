@@ -1,0 +1,128 @@
+footer {
+    width: 100vw;
+    //max-height: 850px;
+    position: relative;
+    overflow: hidden;
+    //height: 90vh;
+
+    section {
+        //width: 90%;
+        @include placeSection;
+        padding-top: 12.275rem;
+        padding-bottom: 6.631rem;
+
+        .content {
+            //height: calc(100% - 90px);
+            display: flex;
+            justify-content: space-between;
+            color: $color-light-text;
+            flex-wrap: wrap;
+            column-gap: 224px;
+            row-gap: 5.875rem;
+            
+            //margin-top: 4.8rem;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+                max-width: 475px;
+                //margin-bottom: 7%;
+                height: 100%;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.4375rem;
+                    letter-spacing: 0.345px;
+                    line-height: 2.3125rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    opacity: 1;
+                    line-height: 2.3125rem;
+                }
+
+                img {
+                    width: 87px;
+                }
+
+                
+            }
+
+
+
+            .WeAccept {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 0.625rem;
+
+                h3 {
+                    width: 100%;
+                }
+            }
+
+            .Info {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                max-width: 1650px;
+                align-items: flex-start;
+
+                .logo {
+                    width: 12.78rem;
+                    max-width: 211px;
+
+                    img {
+                        margin-bottom: 0.9375rem;
+                    }
+                }
+
+                .Social {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    column-gap: 11.6px;
+
+                    p {
+                        width: 100%;
+                        text-align: right;
+                    }
+
+                    img {
+                        width: unset;
+                        height: unset;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .rotateLight {
+            position: absolute;
+            bottom: -71px;
+            left: -41px;
+            z-index: -2;
+            width: 106%;
+            height: 100%;
+            background: $color-secondary;
+            transform: rotate(-4deg);
+        }
+
+        .rotateDark {
+            position: absolute;
+            bottom: -98px;
+            left: -36px;
+            z-index: -1;
+            width: 105%;
+            height: 100%;
+            background: $color-primary;
+            transform: rotate(4deg);
+            box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+        }
+    }
+}

@@ -666,4 +666,107 @@ main .dottedPoint .bg-review .content .feedback .card__content h3 {
   line-height: 2.31rem;
 }
 
+footer {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+footer section {
+  width: 90%;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding-top: 12.275rem;
+  padding-bottom: 6.631rem;
+}
+footer section .content {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  flex-wrap: wrap;
+  column-gap: 224px;
+  row-gap: 5.875rem;
+}
+footer section .content div {
+  display: flex;
+  flex-direction: column;
+  max-width: 475px;
+  height: 100%;
+}
+footer section .content div h3 {
+  font-weight: 700;
+  font-size: 1.4375rem;
+  letter-spacing: 0.345px;
+  line-height: 2.3125rem;
+  margin-bottom: 1.5rem;
+}
+footer section .content div p {
+  font-size: 1.25rem;
+  opacity: 1;
+  line-height: 2.3125rem;
+}
+footer section .content div img {
+  width: 87px;
+}
+footer section .content .WeAccept {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.625rem;
+}
+footer section .content .WeAccept h3 {
+  width: 100%;
+}
+footer section .content .Info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1650px;
+  align-items: flex-start;
+}
+footer section .content .Info .logo {
+  width: 12.78rem;
+  max-width: 211px;
+}
+footer section .content .Info .logo img {
+  margin-bottom: 0.9375rem;
+}
+footer section .content .Info .Social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 11.6px;
+}
+footer section .content .Info .Social p {
+  width: 100%;
+  text-align: right;
+}
+footer section .content .Info .Social img {
+  width: unset;
+  height: unset;
+  margin-bottom: 1.5rem;
+}
+footer section .rotateLight {
+  position: absolute;
+  bottom: -71px;
+  left: -41px;
+  z-index: -2;
+  width: 106%;
+  height: 100%;
+  background: #8C9EFC;
+  transform: rotate(-4deg);
+}
+footer section .rotateDark {
+  position: absolute;
+  bottom: -98px;
+  left: -36px;
+  z-index: -1;
+  width: 105%;
+  height: 100%;
+  background: #424D83;
+  transform: rotate(4deg);
+  box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+}
+
 /*# sourceMappingURL=style.css.map */
