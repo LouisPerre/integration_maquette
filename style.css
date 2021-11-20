@@ -66,16 +66,16 @@ body {
 }
 
 .navbar-section {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 90px;
+  height: 5.625rem;
 }
 .navbar-section > img {
-  height: 27px;
+  height: 1.6875rem;
   padding-bottom: 0.5rem;
 }
 .navbar-section nav {
@@ -83,7 +83,7 @@ body {
 }
 .navbar-section nav ul {
   display: flex;
-  gap: 27px;
+  gap: 1.6875rem;
   align-items: flex-end;
   height: 100%;
 }
@@ -135,7 +135,6 @@ header section {
   margin: 0 auto;
 }
 header section .content {
-  height: calc(100% - 90px);
   display: flex;
   align-items: center;
   color: #fff;
@@ -377,13 +376,13 @@ main section .DontKnow .content .planning .bgImageDark {
 main section .DontKnow .content .planning h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 2.3125rem;
   letter-spacing: 0.345px;
   margin-bottom: 1.5rem;
 }
 main section .DontKnow .content .planning p {
   font-size: 1.25rem;
-  line-height: 37px;
+  line-height: 2.3125rem;
   width: 85.7%;
   max-width: 656px;
   text-align: left;
@@ -401,9 +400,9 @@ main section .DontKnow .content .planning .btn a {
   color: #93A5FF;
   padding: 0.53rem 1.293rem;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 2.3125rem;
   display: flex;
   align-items: center;
 }
@@ -428,9 +427,9 @@ main section .typesHosting .service .vpn a {
   margin-bottom: 3.75rem;
   padding: 0.53rem 1.293rem;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 2.3125rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -456,9 +455,9 @@ main section .typesHosting .service .shared:hover .hoverPrice {
   margin-bottom: 3.75rem;
   padding: 0.53rem 1.293rem;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 2.3125rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -562,7 +561,7 @@ main section .client .button a {
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   padding: 0.9375rem 1.25rem;
   display: flex;
@@ -608,13 +607,13 @@ main .dottedPoint .bg-review .pages .dot:hover {
   width: 20.8px;
   height: 20.8px;
   opacity: 1;
-  box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+  box-shadow: 0px 3px 6px rgba(147, 165, 255, 0.45);
 }
 main .dottedPoint .bg-review .pages .hoverAct {
   width: 20.8px;
   height: 20.8px;
   opacity: 1;
-  box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+  box-shadow: 0px 3px 6px rgba(147, 165, 255, 0.45);
 }
 main .dottedPoint .bg-review .content {
   justify-content: space-evenly;
@@ -749,8 +748,8 @@ footer section .content .Info .Social img {
 }
 footer section .rotateLight {
   position: absolute;
-  bottom: -71px;
-  left: -41px;
+  bottom: -4.4375rem;
+  left: -2.5625rem;
   z-index: -2;
   width: 106%;
   height: 100%;
@@ -759,8 +758,8 @@ footer section .rotateLight {
 }
 footer section .rotateDark {
   position: absolute;
-  bottom: -98px;
-  left: -36px;
+  bottom: -6.125rem;
+  left: -2.25rem;
   z-index: -1;
   width: 105%;
   height: 100%;

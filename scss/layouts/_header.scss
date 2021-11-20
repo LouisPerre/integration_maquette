@@ -10,7 +10,7 @@ header {
         @include placeSection;
 
         .content {
-            height: calc(100% - 90px);
+            //height: calc(100% - 90px);
             display: flex;
             align-items: center;
             color: $color-light-text;

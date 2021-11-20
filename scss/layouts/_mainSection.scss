@@ -171,14 +171,14 @@ main {
                     h3 {
                         font-size: 1.5rem;
                         font-weight: 700;
-                        line-height: 37px;
+                        line-height: 2.3125rem;
                         letter-spacing: 0.345px;
                         margin-bottom: 1.5rem;
                     }
 
                     p {
                         font-size: 1.25rem;
-                        line-height: 37px;
+                        line-height: 2.3125rem;
                         width: 85.7%;
                         max-width: 656px;
                         text-align: left;
@@ -197,9 +197,9 @@ main {
                             color: $color-button-light-text;
                             padding: 0.53rem 1.293rem;
                             border-radius: 5px;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             font-weight: 700;
-                            line-height: 37px;
+                            line-height: 2.3125rem;
                             display: flex;
                             align-items: center;
 
@@ -234,9 +234,9 @@ main {
                         margin-bottom: 3.75rem;
                         padding: 0.53rem 1.293rem;
                         border-radius: 5px;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         font-weight: 700;
-                        line-height: 37px;
+                        line-height: 2.3125rem;
                         display: flex;
                         align-items: center;
                         text-decoration: none;
@@ -263,9 +263,9 @@ main {
                         margin-bottom: 3.75rem;
                         padding: 0.53rem 1.293rem;
                         border-radius: 5px;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         font-weight: 700;
-                        line-height: 37px;
+                        line-height: 2.3125rem;
                         display: flex;
                         align-items: center;
                         text-decoration: none;
@@ -395,7 +395,7 @@ main {
                     border-radius: 5px;
                     text-decoration: none;
                     color: $color-light-text;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: 400;
                     padding: 0.9375rem 1.25rem;
                     display: flex;
@@ -449,7 +449,7 @@ main {
                         width: 20.8px;
                         height: 20.8px;
                         opacity: 1;
-                        box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+                        box-shadow: 0px 3px 6px rgba(147, 165, 255, 0.45);
                     }
                 }
 
@@ -457,7 +457,7 @@ main {
                     width: 20.8px;
                     height: 20.8px;
                     opacity: 1;
-                    box-shadow: 0px 3px 6px rbga(147, 165, 255, 0.45);
+                    box-shadow: 0px 3px 6px rgba(147, 165, 255, 0.45);
                 }
             }
 

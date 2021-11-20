@@ -1,15 +1,15 @@
 .navbar-section {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $color-light-text;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    height: 90px;
+    height: 5.625rem;
     
 
     > img {
-        height: 27px;
+        height: 1.6875rem;
         padding-bottom: 0.5rem;
     }
 
@@ -20,7 +20,7 @@
 
         ul {
             display: flex;
-            gap: 27px;
+            gap: 1.6875rem;
             align-items: flex-end;
             height: 100%;
 
