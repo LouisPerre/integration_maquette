@@ -9,25 +9,63 @@
     
 
     > img {
-        height: 1.6875rem;
+        height: 2.1875rem;
         padding-bottom: 0.5rem;
     }
 
     nav {
         height: 100%;
+        @include ssl {
+            display: flex;
+            align-items: flex-end;
+            
+        }
         //display: flex;
         //align-items: center;
+        
+        .material-icons {
+            display: none;
+            @include ssl {
+                position: relative;
+                z-index: 2;
+                display: block;
+                margin-bottom: 0.5rem;
+                cursor: pointer;
+            }
+        }
+
+        
 
         ul {
             display: flex;
             gap: 1.6875rem;
             align-items: flex-end;
             height: 100%;
+            transition: all 0.3s;
+            @include ssl {
+                position: absolute;
+                right: -50%;
+                top: 0;
+                z-index: 1;
+                position: absolute;
+                height: 100%;
+                width: 50%;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                background: $color-primary;
+                padding-left: 2rem;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
 
             
 
             li:not(:last-child) {
                 height: 100%;
+                @include ssl {
+                    height: unset;
+                }
             }
             
             li {
@@ -41,9 +79,17 @@
                 border-bottom-right-radius: 5px;
                 cursor: pointer;
                 transition: all 0.3s;
+                @include ssl {
+                    padding: 0;
+                    font-size: 2rem;
+                    height: unset;
+                }
 
                 &:not(:last-child):hover {
                     background: $color-button-light-text;
+                    @include ssl {
+                        background: transparent;
+                    }
                     
                 }
                 
@@ -66,6 +112,10 @@
                     color: $color-button-light-text;
                 }
             }
+        }
+
+        .open {
+            right: 0;
         }
     }
 }

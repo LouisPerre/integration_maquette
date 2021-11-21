@@ -29,6 +29,11 @@ footer {
                 max-width: 475px;
                 //margin-bottom: 7%;
                 height: 100%;
+                @include m {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 h3 {
                     font-weight: 700;
@@ -36,6 +41,7 @@ footer {
                     letter-spacing: 0.345px;
                     line-height: 2.3125rem;
                     margin-bottom: 1.5rem;
+                    
                 }
 
                 p {
@@ -58,9 +64,20 @@ footer {
                 flex-direction: row;
                 flex-wrap: wrap;
                 column-gap: 0.625rem;
+                @include sl {
+                    width: 21%;
+                    row-gap: 0.5rem;
+                }
+                @include m {
+                    width: 100%;
+                    justify-content: center;
+                }
 
                 h3 {
                     width: 100%;
+                    @include m {
+                     text-align: center;   
+                    }
                 }
             }
 
@@ -71,6 +88,11 @@ footer {
                 justify-content: space-between;
                 max-width: 1650px;
                 align-items: flex-start;
+                @include m {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 1rem;
+                }
 
                 .logo {
                     width: 12.78rem;
@@ -87,16 +109,34 @@ footer {
                     flex-wrap: wrap;
                     justify-content: flex-end;
                     column-gap: 11.6px;
+                    @include m {
+                        justify-content: center;
+                    }
 
                     p {
                         width: 100%;
                         text-align: right;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        gap: 1.25rem;
+                        @include m {
+                            justify-content: center;
+                        }
                     }
 
                     img {
                         width: unset;
                         height: unset;
                         margin-bottom: 1.5rem;
+                    }
+
+                    span {
+                        display: inline-block;
+                        height: 100%;
+                        max-height: 32px;
+                        width: 1px;
+                        background: $color-light-text;
                     }
                 }
             }
@@ -107,10 +147,13 @@ footer {
             bottom: -4.4375rem;
             left: -2.5625rem;
             z-index: -2;
-            width: 106%;
+            width: 110%;
             height: 100%;
             background: $color-secondary;
             transform: rotate(-4deg);
+            @include sl {
+                width: 125%;
+            }
         }
 
         .rotateDark {
@@ -118,11 +161,15 @@ footer {
             bottom: -6.125rem;
             left: -2.25rem;
             z-index: -1;
-            width: 105%;
+            width: 110%;
             height: 100%;
             background: $color-primary;
             transform: rotate(4deg);
             box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+            @include sl {
+                width: 125%;
+                left: -4.25rem;
+            }
         }
     }
 }

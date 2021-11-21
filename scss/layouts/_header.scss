@@ -15,10 +15,16 @@ header {
             align-items: center;
             color: $color-light-text;
             margin-top: 4.8rem;
+            @include m {
+                flex-direction: column;
+            }
 
             > img {
                 width: 50%;
                 margin-bottom: 7%;
+                @include m {
+                    width: 70%;
+                }
             }
 
             > div {
@@ -26,6 +32,10 @@ header {
                 flex-direction: column;
                 width: 50%;
                 margin-bottom: 7%;
+                @include m {
+                    align-items: center;
+                    width: 85%;
+                }
 
                 h1 {
                     font-family: $font-title;
@@ -45,6 +55,13 @@ header {
                 .choice {
                     display: flex;
                     gap: 1px;
+                    @include sl {
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                    }
+                    @include m {
+                        justify-content: center;
+                    }
                     
                     > input {
                         color: white;
@@ -60,6 +77,12 @@ header {
                         margin-top: 2.75rem;
                         border-top-left-radius: 5px;
                         border-bottom-left-radius: 5px;
+                        @include sl {
+                            width: 60%;
+                        }
+                        @include m {
+                            width: 67.3%;
+                        }
                     }
 
                     > select {
@@ -75,6 +98,12 @@ header {
                         font-weight: 400;
                         font-family: $font-primary;
                         padding-left: 0.75rem;
+                        @include sl {
+                            width: 25%;
+                        }
+                        @include m {
+                            width: 32.2%;
+                        }
                     }
 
                     > a {
@@ -84,13 +113,20 @@ header {
                         border-radius: 5px;
                         text-decoration: none;
                         color: $color-light-text;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         font-weight: 600;
                         padding: 1rem 1.2rem;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         margin-left: 2rem;
+                        @include sl {
+                            margin-left: 0;
+                            width: 85%;
+                        }
+                        @include m {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -98,10 +134,10 @@ header {
 
         .rotateLight {
             position: absolute;
-            top: -71px;
-            left: -41px;
+            top: -4.4375rem;
+            left: -2.5625rem;
             z-index: -2;
-            width: 106%;
+            width: 110%;
             height: 100%;
             background: $color-secondary;
             transform: rotate(-4deg);
@@ -109,14 +145,18 @@ header {
 
         .rotateDark {
             position: absolute;
-            top: -98px;
-            left: -36px;
+            top: -6.125rem;
+            left: -2.25rem;
             z-index: -1;
-            width: 105%;
+            width: 110%;
             height: 100%;
             background: $color-primary;
             transform: rotate(4deg);
             box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+            @include m {
+                width: 120%;
+                left: -4.25rem;
+            }
         }
     }
 }

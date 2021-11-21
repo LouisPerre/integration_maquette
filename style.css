@@ -59,6 +59,16 @@ table {
 html {
   font-size: 16px;
 }
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -75,20 +85,62 @@ body {
   height: 5.625rem;
 }
 .navbar-section > img {
-  height: 1.6875rem;
+  height: 2.1875rem;
   padding-bottom: 0.5rem;
 }
 .navbar-section nav {
   height: 100%;
+}
+@media screen and (max-width: 895px) {
+  .navbar-section nav {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.navbar-section nav .material-icons {
+  display: none;
+}
+@media screen and (max-width: 895px) {
+  .navbar-section nav .material-icons {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
 }
 .navbar-section nav ul {
   display: flex;
   gap: 1.6875rem;
   align-items: flex-end;
   height: 100%;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 895px) {
+  .navbar-section nav ul {
+    position: absolute;
+    right: -50%;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #424D83;
+    padding-left: 2rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
 .navbar-section nav ul li:not(:last-child) {
   height: 100%;
+}
+@media screen and (max-width: 895px) {
+  .navbar-section nav ul li:not(:last-child) {
+    height: unset;
+  }
 }
 .navbar-section nav ul li {
   padding-left: 1.5rem;
@@ -101,8 +153,20 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+@media screen and (max-width: 895px) {
+  .navbar-section nav ul li {
+    padding: 0;
+    font-size: 2rem;
+    height: unset;
+  }
+}
 .navbar-section nav ul li:not(:last-child):hover {
   background: #93A5FF;
+}
+@media screen and (max-width: 895px) {
+  .navbar-section nav ul li:not(:last-child):hover {
+    background: transparent;
+  }
 }
 .navbar-section nav ul li a {
   text-decoration: none;
@@ -119,6 +183,9 @@ body {
 .navbar-section nav ul .Login a {
   font-weight: 600;
   color: #93A5FF;
+}
+.navbar-section nav .open {
+  right: 0;
 }
 
 header {
@@ -140,15 +207,31 @@ header section .content {
   color: #fff;
   margin-top: 4.8rem;
 }
+@media screen and (max-width: 560px) {
+  header section .content {
+    flex-direction: column;
+  }
+}
 header section .content > img {
   width: 50%;
   margin-bottom: 7%;
+}
+@media screen and (max-width: 560px) {
+  header section .content > img {
+    width: 70%;
+  }
 }
 header section .content > div {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-bottom: 7%;
+}
+@media screen and (max-width: 560px) {
+  header section .content > div {
+    align-items: center;
+    width: 85%;
+  }
 }
 header section .content > div h1 {
   font-family: "Roboto", sans-serif;
@@ -167,6 +250,17 @@ header section .content > div .choice {
   display: flex;
   gap: 1px;
 }
+@media screen and (max-width: 1000px) {
+  header section .content > div .choice {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 560px) {
+  header section .content > div .choice {
+    justify-content: center;
+  }
+}
 header section .content > div .choice > input {
   color: white;
   background: #384170;
@@ -182,6 +276,16 @@ header section .content > div .choice > input {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+@media screen and (max-width: 1000px) {
+  header section .content > div .choice > input {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header section .content > div .choice > input {
+    width: 67.3%;
+  }
+}
 header section .content > div .choice > select {
   width: 15%;
   margin-top: 2.75rem;
@@ -196,6 +300,16 @@ header section .content > div .choice > select {
   font-family: "Nunito", sans-serif;
   padding-left: 0.75rem;
 }
+@media screen and (max-width: 1000px) {
+  header section .content > div .choice > select {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header section .content > div .choice > select {
+    width: 32.2%;
+  }
+}
 header section .content > div .choice > a {
   margin-top: 2.75rem;
   background: #93A5FF;
@@ -203,7 +317,7 @@ header section .content > div .choice > a {
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   padding: 1rem 1.2rem;
   display: flex;
@@ -211,26 +325,43 @@ header section .content > div .choice > a {
   justify-content: center;
   margin-left: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  header section .content > div .choice > a {
+    margin-left: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 560px) {
+  header section .content > div .choice > a {
+    width: 100%;
+  }
+}
 header section .rotateLight {
   position: absolute;
-  top: -71px;
-  left: -41px;
+  top: -4.4375rem;
+  left: -2.5625rem;
   z-index: -2;
-  width: 106%;
+  width: 110%;
   height: 100%;
   background: #8C9EFC;
   transform: rotate(-4deg);
 }
 header section .rotateDark {
   position: absolute;
-  top: -98px;
-  left: -36px;
+  top: -6.125rem;
+  left: -2.25rem;
   z-index: -1;
-  width: 105%;
+  width: 110%;
   height: 100%;
   background: #424D83;
   transform: rotate(4deg);
   box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+}
+@media screen and (max-width: 560px) {
+  header section .rotateDark {
+    width: 120%;
+    left: -4.25rem;
+  }
 }
 
 main {
@@ -272,17 +403,36 @@ main section .WhatWill .illu {
   margin-top: 2rem;
   margin-bottom: 6.6rem;
 }
+@media screen and (max-width: 1450px) {
+  main section .WhatWill .illu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 main section .WhatWill .illu__text {
   display: flex;
   flex-direction: column;
   width: 42%;
   max-width: 690px;
 }
+@media screen and (max-width: 1450px) {
+  main section .WhatWill .illu__text {
+    width: 100%;
+  }
+}
 main section .WhatWill .illu__text__card {
   display: flex;
   align-items: flex-start;
   height: 33%;
   margin-bottom: 3.75rem;
+}
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__text__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+  }
 }
 main section .WhatWill .illu__text__card img {
   height: 57%;
@@ -293,6 +443,11 @@ main section .WhatWill .illu__text__card__text {
   flex-direction: column;
   margin-left: 1.9rem;
 }
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__text__card__text {
+    margin-left: 0;
+  }
+}
 main section .WhatWill .illu__text__card__text h3, main section .WhatWill .illu__text__card__text p {
   font-size: 1.5rem;
   font-weight: 700;
@@ -302,6 +457,11 @@ main section .WhatWill .illu__text__card__text p {
   font-weight: 400;
   opacity: 0.8;
   text-align: left;
+}
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__text__card__text p {
+    text-align: center;
+  }
 }
 main section .WhatWill .illu__text__card__text h3 {
   font-weight: 700;
@@ -317,15 +477,40 @@ main section .WhatWill .illu__img {
   max-height: 570px;
   width: 52%;
 }
+@media screen and (max-width: 1450px) {
+  main section .WhatWill .illu__img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section .WhatWill .illu__img {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__img .imageIllu {
+    width: 75%;
+  }
+}
 main section .WhatWill .illu__img img:nth-child(1) {
   position: absolute;
   top: 0;
   right: 0;
 }
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__img img:nth-child(1) {
+    width: 25%;
+  }
+}
 main section .WhatWill .illu__img img:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media screen and (max-width: 560px) {
+  main section .WhatWill .illu__img img:nth-child(3) {
+    width: 25%;
+  }
 }
 main section .DontKnow {
   width: 100%;
@@ -336,6 +521,13 @@ main section .DontKnow .content {
   display: flex;
   justify-content: space-between;
   margin-top: 4.981rem;
+}
+@media screen and (max-width: 1000px) {
+  main section .DontKnow .content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
 }
 main section .DontKnow .content .light {
   background: #93A5FF;
@@ -354,10 +546,25 @@ main section .DontKnow .content .planning {
   justify-content: flex-start;
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) {
+  main section .DontKnow .content .planning {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning {
+    padding: 1.875rem 2.125rem;
+  }
+}
 main section .DontKnow .content .planning .contentImg {
   width: 10%;
   max-width: 77px;
   margin-bottom: 2.6875rem;
+}
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning .contentImg {
+    width: 20%;
+  }
 }
 main section .DontKnow .content .planning .bgImageLight {
   width: 35%;
@@ -366,12 +573,22 @@ main section .DontKnow .content .planning .bgImageLight {
   right: 1.2rem;
   top: 2.2rem;
 }
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning .bgImageLight {
+    width: 40%;
+  }
+}
 main section .DontKnow .content .planning .bgImageDark {
   width: 35%;
   max-width: 260px;
   position: absolute;
   right: 1.2rem;
   top: 0;
+}
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning .bgImageDark {
+    width: 40%;
+  }
 }
 main section .DontKnow .content .planning h3 {
   font-size: 1.5rem;
@@ -388,6 +605,11 @@ main section .DontKnow .content .planning p {
   text-align: left;
   opacity: 1;
   margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning p {
+    width: 100%;
+  }
 }
 main section .DontKnow .content .planning .btn {
   width: 100%;
@@ -406,6 +628,12 @@ main section .DontKnow .content .planning .btn a {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 560px) {
+  main section .DontKnow .content .planning .btn a {
+    width: 100%;
+    justify-content: center;
+  }
+}
 main section .DontKnow .content .planning .btn a img {
   margin-left: 1.156rem;
 }
@@ -419,6 +647,20 @@ main section .typesHosting .service {
   justify-content: space-between;
   margin-top: 5rem;
   margin-bottom: 6.6rem;
+}
+@media screen and (max-width: 1200px) {
+  main section .typesHosting .service {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section .typesHosting .service {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
 }
 main section .typesHosting .service .vpn {
   border-top: #93A5FF 11px solid;
@@ -447,6 +689,17 @@ main section .typesHosting .service .shared {
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.11);
   height: 100%;
   transition: all 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  main section .typesHosting .service .shared {
+    width: 30.7%;
+    min-width: 280px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section .typesHosting .service .shared {
+    width: 50.7%;
+  }
 }
 main section .typesHosting .service .shared:hover {
   border-top: #93A5FF 11px solid;
@@ -492,6 +745,11 @@ main section .typesHosting .service .shared__content p {
   width: 79.3%;
   max-width: 284px;
   letter-spacing: 0;
+}
+@media screen and (max-width: 1000px) {
+  main section .typesHosting .service .shared__content p {
+    max-width: 354px;
+  }
 }
 main section .typesHosting .service .shared__content img {
   width: 18.65rem;
@@ -546,6 +804,8 @@ main section .client .logoSos {
   align-items: center;
   gap: 9.25rem;
   max-width: 1650px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 main section .client .logoSos img {
   height: 100%;
@@ -578,10 +838,30 @@ main .dottedPoint .first {
   right: 0.79rem;
   top: -3rem;
 }
+@media screen and (max-width: 1200px) {
+  main .dottedPoint .first {
+    right: -12.21rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  main .dottedPoint .first {
+    right: -18rem;
+  }
+}
 main .dottedPoint .second {
   position: absolute;
   left: 0.745rem;
   bottom: -3.875rem;
+}
+@media screen and (max-width: 1200px) {
+  main .dottedPoint .second {
+    left: -12.255rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  main .dottedPoint .second {
+    left: -14rem;
+  }
 }
 main .dottedPoint .bg-review {
   background-color: #F7F8FF;
@@ -618,6 +898,13 @@ main .dottedPoint .bg-review .pages .hoverAct {
 main .dottedPoint .bg-review .content {
   justify-content: space-evenly;
 }
+@media screen and (max-width: 1000px) {
+  main .dottedPoint .bg-review .content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+}
 main .dottedPoint .bg-review .content .feedback {
   width: 41.5%;
   max-width: 685px;
@@ -628,10 +915,26 @@ main .dottedPoint .bg-review .content .feedback {
   flex-direction: row;
   height: 100%;
 }
+@media screen and (max-width: 1000px) {
+  main .dottedPoint .bg-review .content .feedback {
+    width: 68.5%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main .dottedPoint .bg-review .content .feedback {
+    width: 95%;
+  }
+}
 main .dottedPoint .bg-review .content .feedback .user {
   width: 15.7%;
   max-width: 108px;
   margin-right: 1.93rem;
+}
+@media screen and (max-width: 560px) {
+  main .dottedPoint .bg-review .content .feedback .user {
+    width: 23.7%;
+    margin-right: 1rem;
+  }
 }
 main .dottedPoint .bg-review .content .feedback .user img {
   width: 100%;
@@ -645,6 +948,11 @@ main .dottedPoint .bg-review .content .feedback .card__content .reviewStar {
   width: 24.81%;
   max-width: 136px;
   margin-bottom: 1.525rem;
+}
+@media screen and (max-width: 560px) {
+  main .dottedPoint .bg-review .content .feedback .card__content .reviewStar {
+    width: 38.81%;
+  }
 }
 main .dottedPoint .bg-review .content .feedback .card__content p {
   font-size: 1.4375rem;
@@ -691,6 +999,13 @@ footer section .content div {
   max-width: 475px;
   height: 100%;
 }
+@media screen and (max-width: 560px) {
+  footer section .content div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer section .content div h3 {
   font-weight: 700;
   font-size: 1.4375rem;
@@ -712,8 +1027,25 @@ footer section .content .WeAccept {
   flex-wrap: wrap;
   column-gap: 0.625rem;
 }
+@media screen and (max-width: 1000px) {
+  footer section .content .WeAccept {
+    width: 21%;
+    row-gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  footer section .content .WeAccept {
+    width: 100%;
+    justify-content: center;
+  }
+}
 footer section .content .WeAccept h3 {
   width: 100%;
+}
+@media screen and (max-width: 560px) {
+  footer section .content .WeAccept h3 {
+    text-align: center;
+  }
 }
 footer section .content .Info {
   display: flex;
@@ -722,6 +1054,13 @@ footer section .content .Info {
   justify-content: space-between;
   max-width: 1650px;
   align-items: flex-start;
+}
+@media screen and (max-width: 560px) {
+  footer section .content .Info {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
 }
 footer section .content .Info .logo {
   width: 12.78rem;
@@ -737,35 +1076,67 @@ footer section .content .Info .Social {
   justify-content: flex-end;
   column-gap: 11.6px;
 }
+@media screen and (max-width: 560px) {
+  footer section .content .Info .Social {
+    justify-content: center;
+  }
+}
 footer section .content .Info .Social p {
   width: 100%;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media screen and (max-width: 560px) {
+  footer section .content .Info .Social p {
+    justify-content: center;
+  }
 }
 footer section .content .Info .Social img {
   width: unset;
   height: unset;
   margin-bottom: 1.5rem;
 }
+footer section .content .Info .Social span {
+  display: inline-block;
+  height: 100%;
+  max-height: 32px;
+  width: 1px;
+  background: #fff;
+}
 footer section .rotateLight {
   position: absolute;
   bottom: -4.4375rem;
   left: -2.5625rem;
   z-index: -2;
-  width: 106%;
+  width: 110%;
   height: 100%;
   background: #8C9EFC;
   transform: rotate(-4deg);
+}
+@media screen and (max-width: 1000px) {
+  footer section .rotateLight {
+    width: 125%;
+  }
 }
 footer section .rotateDark {
   position: absolute;
   bottom: -6.125rem;
   left: -2.25rem;
   z-index: -1;
-  width: 105%;
+  width: 110%;
   height: 100%;
   background: #424D83;
   transform: rotate(4deg);
   box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
+}
+@media screen and (max-width: 1000px) {
+  footer section .rotateDark {
+    width: 125%;
+    left: -4.25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

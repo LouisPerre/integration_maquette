@@ -36,6 +36,10 @@ main {
                 justify-content: space-between;
                 margin-top: 2rem;
                 margin-bottom: 6.6rem;
+                @include xl {
+                    flex-direction: column;
+                    align-items: center;
+                }
                 
                 //justify-content: space-between;
                 //align-items: center;
@@ -45,13 +49,21 @@ main {
                     flex-direction: column;
                     width: 42%;
                     max-width: 690px;
-                    //max-height: 500px;
+                    @include xl {
+                        width: 100%;
+                    }
 
                     &__card {
                         display: flex;
                         align-items: flex-start;
                         height: 33%;
                         margin-bottom: 3.75rem;
+                        @include m {
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            row-gap: 1rem;
+                        }
                         
                         
                         img {
@@ -65,6 +77,9 @@ main {
                             display: flex;
                             flex-direction: column;
                             margin-left: 1.9rem;
+                            @include m {
+                                margin-left: 0;
+                            }
 
                             h3, p {
                                 font-size: 1.5rem;
@@ -76,6 +91,9 @@ main {
                                 font-weight: 400;
                                 opacity: 0.8;
                                 text-align: left;
+                                @include m {
+                                    text-align: center;
+                                }
                             }
                             h3 {
                                 font-weight: 700;
@@ -97,17 +115,36 @@ main {
                     max-width: 850px;
                     max-height: 570px;
                     width: 52%;
+                    @include xl {
+                        width: 65%;
+                    }
+                    @include sl {
+                        width: 91%;
+                    }
+
+                    .imageIllu {
+                        @include m {
+                            width: 75%;
+                        }
+
+                    }
 
                     img:nth-child(1) {
                         position: absolute;
                         top: 0;
                         right: 0;
+                        @include m {
+                            width: 25%;
+                        }
                     }
 
                     img:nth-child(3) {
                         position: absolute;
                         bottom: 0;
                         left: 0;
+                        @include m {
+                            width: 25%;
+                        }
                     }
 
                 }
@@ -123,6 +160,11 @@ main {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 4.981rem;
+                @include sl {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 2rem;
+                }
 
                 .light {
                     background: $color-button-light-text;
@@ -145,11 +187,20 @@ main {
                     display: flex;
                     justify-content: flex-start;
                     flex-direction: column;
+                    @include sl {
+                        width: 87%;
+                    }
+                    @include m {
+                        padding: 1.875rem 2.125rem;
+                    }
 
                     .contentImg {
                         width: 10%;
                         max-width: 77px;
                         margin-bottom: 2.6875rem;
+                        @include m {
+                            width: 20%;
+                        }
                     }
 
                     .bgImageLight {
@@ -158,6 +209,9 @@ main {
                         position: absolute;
                         right: 1.2rem;
                         top: 2.2rem;
+                        @include m {
+                            width: 40%;
+                        }
                     }
 
                     .bgImageDark {
@@ -166,6 +220,9 @@ main {
                         position: absolute;
                         right: 1.2rem;
                         top: 0;
+                        @include m {
+                            width: 40%;
+                        }
                     }
 
                     h3 {
@@ -184,6 +241,9 @@ main {
                         text-align: left;
                         opacity: 1;
                         margin-bottom: 1.25rem;
+                        @include m {
+                            width: 100%;
+                        }
                     }
 
                     .btn {
@@ -202,6 +262,10 @@ main {
                             line-height: 2.3125rem;
                             display: flex;
                             align-items: center;
+                            @include m {
+                                width: 100%;
+                                justify-content: center;
+                            }
 
                             img {
                                 margin-left: 1.156rem;
@@ -224,6 +288,16 @@ main {
                 justify-content: space-between;
                 margin-top: 5rem;
                 margin-bottom: 6.6rem;
+                @include l {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 2rem;
+                }
+                @include sl {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 2rem;
+                }
                 
 
                 .vpn {
@@ -257,6 +331,13 @@ main {
                     box-shadow: 0 3px 17px rgba(0, 0, 0, 0.11);
                     height: 100%;
                     transition: all 0.3s;
+                    @include l {
+                        width: 30.7%;
+                        min-width: 280px;
+                    }
+                    @include sl {
+                        width: 50.7%;
+                    }
 
                     &:hover {
                         .hoverPrice {
@@ -308,6 +389,9 @@ main {
                             width: 79.3%;
                             max-width: 284px;
                             letter-spacing: 0;
+                            @include sl {
+                                max-width: 354px;
+                            }
                         }
     
                         img {
@@ -379,6 +463,8 @@ main {
                 align-items: center;
                 gap: 9.25rem;
                 max-width: 1650px;
+                flex-wrap: wrap;
+                justify-content: center;
 
                 img {
                     height: 100%;
@@ -417,12 +503,24 @@ main {
             position: absolute;
             right: 0.79rem;
             top: -3rem;
+            @include l {
+                right: -12.21rem;
+            }
+            @include m {
+                right: -18rem;
+            }
         }
 
         .second {
             position: absolute;
             left: 0.745rem;
             bottom: -3.875rem;
+            @include l {
+                left: -12.255rem;
+            }
+            @include m {
+                left: -14rem;
+            }
         }
 
         .bg-review {
@@ -463,6 +561,11 @@ main {
 
             .content {
                 justify-content: space-evenly;
+                @include sl {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 2rem;
+                }
 
                 .feedback {
                     width: 41.5%;
@@ -473,11 +576,21 @@ main {
                     justify-content: flex-start;
                     flex-direction: row;
                     height: 100%;
+                    @include sl {
+                        width: 68.5%;
+                    }
+                    @include m {
+                        width: 95%;
+                    }
     
                     .user {
                         width: 15.7%;
                         max-width: 108px;
                         margin-right: 1.93rem;
+                        @include m {
+                            width: 23.7%;
+                            margin-right: 1rem;
+                        }
     
                         img {
                             width: 100%;
@@ -494,6 +607,9 @@ main {
                             width: 24.81%;
                             max-width: 136px;
                             margin-bottom: 1.525rem;
+                            @include m {
+                                width: 38.81%;
+                            }
                         }
     
                         p {
