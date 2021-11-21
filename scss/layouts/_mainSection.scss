@@ -493,10 +493,10 @@ main {
             right: 0.79rem;
             top: -3rem;
             @include l {
-                right: -12.21rem;
+                
             }
-            @include m {
-                right: -18rem;
+            @include sl {
+                display: none;
             }
         }
 
@@ -504,12 +504,10 @@ main {
             position: absolute;
             left: 0.745rem;
             bottom: -3.875rem;
-            @include l {
-                left: -12.255rem;
+            @include sl {
+                display: none;
             }
-            @include m {
-                left: -14rem;
-            }
+            
         }
 
         .bg-review {

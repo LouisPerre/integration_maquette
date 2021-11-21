@@ -835,14 +835,9 @@ main .dottedPoint .first {
   right: 0.79rem;
   top: -3rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   main .dottedPoint .first {
-    right: -12.21rem;
-  }
-}
-@media screen and (max-width: 560px) {
-  main .dottedPoint .first {
-    right: -18rem;
+    display: none;
   }
 }
 main .dottedPoint .second {
@@ -850,14 +845,9 @@ main .dottedPoint .second {
   left: 0.745rem;
   bottom: -3.875rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   main .dottedPoint .second {
-    left: -12.255rem;
-  }
-}
-@media screen and (max-width: 560px) {
-  main .dottedPoint .second {
-    left: -14rem;
+    display: none;
   }
 }
 main .dottedPoint .bg-review {
