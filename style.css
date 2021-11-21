@@ -198,6 +198,11 @@ header {
   height: 90vh;
   min-height: 90vh;
 }
+@media screen and (max-width: 560px) {
+  header {
+    height: 100vh;
+  }
+}
 header section {
   width: 90%;
   width: 90%;

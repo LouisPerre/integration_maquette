@@ -4,7 +4,9 @@ header {
     position: relative;
     overflow: hidden;
     height: 90vh;
-    
+    @include m {
+        height: 100vh;
+    }
     min-height: 90vh;
 
     section {
