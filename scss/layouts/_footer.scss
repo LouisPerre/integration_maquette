@@ -137,7 +137,7 @@ footer {
 
         .rotateLight {
             position: absolute;
-            bottom: -4.4375rem;
+            bottom: -5.4375rem;
             left: -2.5625rem;
             z-index: -2;
             width: 110%;
@@ -146,6 +146,9 @@ footer {
             transform: rotate(-4deg);
             @include sl {
                 width: 125%;
+            }
+            @include m {
+                bottom: -5.837rem;
             }
         }
 

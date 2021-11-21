@@ -1095,7 +1095,7 @@ footer section .content .Info .Social span {
 }
 footer section .rotateLight {
   position: absolute;
-  bottom: -4.4375rem;
+  bottom: -5.4375rem;
   left: -2.5625rem;
   z-index: -2;
   width: 110%;
@@ -1106,6 +1106,11 @@ footer section .rotateLight {
 @media screen and (max-width: 1000px) {
   footer section .rotateLight {
     width: 125%;
+  }
+}
+@media screen and (max-width: 560px) {
+  footer section .rotateLight {
+    bottom: -5.837rem;
   }
 }
 footer section .rotateDark {
