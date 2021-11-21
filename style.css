@@ -497,7 +497,7 @@ main section .WhatWill .illu__img img:nth-child(1) {
   top: 0;
   right: 0;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 895px) {
   main section .WhatWill .illu__img img:nth-child(1) {
     width: 25%;
   }
@@ -507,7 +507,7 @@ main section .WhatWill .illu__img img:nth-child(3) {
   bottom: 0;
   left: 0;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 895px) {
   main section .WhatWill .illu__img img:nth-child(3) {
     width: 25%;
   }
