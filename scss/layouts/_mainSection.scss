@@ -41,8 +41,6 @@ main {
                     align-items: center;
                 }
                 
-                //justify-content: space-between;
-                //align-items: center;
 
                 &__text {
                     display: flex;
@@ -69,8 +67,6 @@ main {
                         img {
                             height: 57%;
                             max-height: 71px;
-                            //width: 11%;
-                            //max-width: 71px;
                         }
 
                         &__text {
@@ -180,9 +176,6 @@ main {
                     border-radius: 5px;
                     position: relative;
                     color: $color-light-text;
-                    //padding-left: 3.125rem;
-                    //padding-right: 3.125rem;
-                    //padding-top: 2.875rem;
                     padding: 2.875rem 3.125rem;
                     display: flex;
                     justify-content: flex-start;
@@ -415,7 +408,6 @@ main {
                             font-weight: 400;
                             line-height: 2.31rem;
                             opacity: 1;
-                            //margin-top: 2.28rem;
                         }
 
                         .priceNumber {
@@ -600,7 +592,6 @@ main {
                     .card__content {
                         width: 79.7%;
                         max-width: 546px;
-                        //height: 93.59%;
                         margin-top: 0.82125rem;
     
                         .reviewStar {

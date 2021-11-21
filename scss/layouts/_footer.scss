@@ -1,33 +1,26 @@
 footer {
     width: 100vw;
-    //max-height: 850px;
     position: relative;
     overflow: hidden;
-    //height: 90vh;
 
     section {
-        //width: 90%;
         @include placeSection;
         padding-top: 12.275rem;
         padding-bottom: 6.631rem;
 
         .content {
-            //height: calc(100% - 90px);
             display: flex;
             justify-content: space-between;
             color: $color-light-text;
             flex-wrap: wrap;
             column-gap: 224px;
             row-gap: 5.875rem;
-            
-            //margin-top: 4.8rem;
 
 
             div {
                 display: flex;
                 flex-direction: column;
                 max-width: 475px;
-                //margin-bottom: 7%;
                 height: 100%;
                 @include m {
                     width: 100%;
