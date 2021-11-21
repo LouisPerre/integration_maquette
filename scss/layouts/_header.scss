@@ -4,6 +4,7 @@ header {
     position: relative;
     overflow: hidden;
     height: 90vh;
+    min-height: 90vh;
 
     section {
         width: 90%;
@@ -154,7 +155,7 @@ header {
             box-shadow: 0px 3px 25px rgba(66, 77, 131, 0.27);
             @include m {
                 width: 120%;
-                left: -4.25rem;
+                left: -4rem;
             }
         }
     }

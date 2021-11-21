@@ -194,6 +194,7 @@ header {
   position: relative;
   overflow: hidden;
   height: 90vh;
+  min-height: 90vh;
 }
 header section {
   width: 90%;
@@ -360,7 +361,7 @@ header section .rotateDark {
 @media screen and (max-width: 560px) {
   header section .rotateDark {
     width: 120%;
-    left: -4.25rem;
+    left: -4rem;
   }
 }
 
