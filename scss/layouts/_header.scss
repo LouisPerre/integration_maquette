@@ -5,7 +5,7 @@ header {
     overflow: hidden;
     height: 90vh;
     @include m {
-        height: 100vh;
+        min-height: 730px;
     }
     min-height: 90vh;
 
